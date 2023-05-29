@@ -5,55 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>회원가입</title>
     <link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Add custom styles */
+      .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form-container label {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <div>
-        <form class="needs-validation">
-          <ul>
-            <li class="input-group has-validation">
-              <label for="join-email-input">
-                <span></span>
-                <span>
-                  <input type="email" class="form-control" id="join-email-input" placeholder="아이디(이메일)" aria-label="아이디(이메일)">
-                </span>
-              </label>
-            </li>
-            <li>
-              <label for="join-password-input">
-                <span></span>
-                <span>
-                  <input type="password" class="form-control" id="join-password-input" placeholder="비밀번호" aria-label="비밀번호">
-                </span>
-              </label>
-            </li>
-            <li>
-              <label for="join-passwordCheck-input">
-                <span></span>
-                <span>
-                  <input type="password" class="form-control" id="join-passwordCheck-input" placeholder="비밀번호 확인" aria-label="비밀번호 확인">
-                </span>
-              </label>
-            </li>
-            <li>
-              <label for="join-name-input">
-                <span></span>
-                <span>
-                  <input type="text" class="form-control" id="join-name-input" placeholder="이름" aria-label="이름">
-                </span>
-              </label>
-            </li>
-            <li>
-              <label for="join-phone-input">
-                <span></span>
-                <span>
-                  <input type="tel" class="form-control" id="join-phone-input" placeholder="휴대폰 번호" aria-label="휴대폰 번호">
-                </span>
-              </label>
-            </li>
-          </ul>
-        </form>
-      </div>
+    <div class="form-container">
+      <form>
+        <div class="mb-3">
+          <label for="join-email-input" class="form-label">아이디(이메일)</label>
+          <input type="email" class="form-control" id="join-email-input" placeholder="아이디(이메일)">
+        </div>
+        <div class="mb-3">
+          <label for="join-password-input" class="form-label">비밀번호</label>
+          <input type="password" class="form-control" id="join-password-input" placeholder="비밀번호">
+        </div>
+        <div class="mb-3">
+          <label for="join-passwordCheck-input" class="form-label">비밀번호 확인</label>
+          <input type="password" class="form-control" id="join-passwordCheck-input" placeholder="비밀번호 확인">
+        </div>
+        <div class="mb-3">
+          <label for="join-name-input" class="form-label">이름</label>
+          <input type="text" class="form-control" id="join-name-input" placeholder="이름">
+        </div>
+        <div class="mb-3">
+          <label for="join-phone-input" class="form-label">휴대폰 번호</label>
+          <input type="tel" class="form-control" id="join-phone-input" placeholder="휴대폰 번호">
+        </div>
+        <button type="submit" class="btn btn-primary">가입하기</button>
+      </form>
     </div>
+
+    <script src="../MyShoppingMall/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
