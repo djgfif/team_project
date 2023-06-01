@@ -12,7 +12,7 @@ window.onload = function() {
   function checkId() {
     var idLimit = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
     if (!idLimit.test(input[0].value)) {
-      error[0].innerHTML = "5~20자의 영문 소대문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.";
+      error[0].innerHTML = "이메일을 올바르게 입력해주세요.";
       return false;
     }
     return true;
