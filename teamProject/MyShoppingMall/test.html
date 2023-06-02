@@ -1,82 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>회원가입</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Shop</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+<link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
     <style>
-      /* Add custom styles */
-      .form-container {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f4f4f4;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
 
-      .form-container label {
-        font-weight: bold;
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
 
-      /* Adjust spacing */
-      .my-3:not(:last-child) {
-        margin-bottom: 1.5rem;
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
       }
-      .px-4 {
-        padding-left: 1rem;
-        padding-right: 1rem;
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
       }
-      .mt-4 {
-        margin-top: 1.5rem;
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
       }
-      .error-message {
-        color: red;
-        font-size: 0.8rem;
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
       }
     </style>
+      
+
+<link href="../MyShoppingMall/assets/css/carousel.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <header class="text-center mt-4">
-        <h2>회원가입</h2>
+    <div>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">로고</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">이벤트</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">상품</a>
+                </li>
+              </ul>
+              <div class="text-end">
+                <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
+                <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
-      <div class="form-container">
-        <form id="registration-form">
-          <div class="my-3">
-            <label for="join-email-input" class="form-label">아이디(이메일)</label>
-            <input type="email" class="form-control" id="join-email-input" placeholder="아이디(이메일)" required>
-            <span id="email-error" class="error-message"></span>
+
+      <main>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="상품1이미지링크" class="card-img-top" alt="상품1">
+                <div class="card-body">
+                  <h5 class="card-title">상품1 제목</h5>
+                  <p class="card-text">상품1 설명</p>
+                  <a href="상품1링크" class="btn btn-primary">구매하기</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="상품2이미지링크" class="card-img-top" alt="상품2">
+                <div class="card-body">
+                  <h5 class="card-title">상품2 제목</h5>
+                  <p class="card-text">상품2 설명</p>
+                  <a href="상품2링크" class="btn btn-primary">구매하기</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="상품3이미지링크" class="card-img-top" alt="상품3">
+                <div class="card-body">
+                  <h5 class="card-title">상품3 제목</h5>
+                  <p class="card-text">상품3 설명</p>
+                  <a href="상품3링크" class="btn btn-primary">구매하기</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="my-3">
-            <label for="join-password-input" class="form-label">비밀번호</label>
-            <input type="password" class="form-control" id="join-password-input" placeholder="비밀번호" required>
-            <span id="password-error" class="error-message"></span>
-          </div>
-          <div class="my-3">
-            <label for="join-passwordCheck-input" class="form-label">비밀번호 확인</label>
-            <input type="password" class="form-control" id="join-passwordCheck-input" placeholder="비밀번호 확인" required>
-            <span id="passwordCheck-error" class="error-message"></span>
-          </div>
-          <div class="my-3">
-            <label for="join-name-input" class="form-label">이름</label>
-            <input type="text" class="form-control" id="join-name-input" placeholder="이름" required>
-            <span id="name-error" class="error-message"></span>
-          </div>
-          <div class="my-3">
-            <label for="join-phone-input" class="form-label">휴대폰 번호</label>
-            <input type="tel" class="form-control" id="join-phone-input" placeholder="휴대폰 번호" required>
-            <span id="phone-error" class="error-message"></span>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary px-4">가입하기</button>
-          </div>
-        </form>
-      </div>
+        </div>
+      </main>
+      
+      
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/signup.js"></script>
+    <script src="../MyShoppingMall/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

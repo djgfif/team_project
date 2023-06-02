@@ -1,7 +1,7 @@
 window.onload = function() {
-  var join = document.getElementById('registration-form');
-  var input = join.getElementsByClassName('form-control');
-  var error = join.getElementsByClassName('error-message');
+  const join = document.getElementById('registration-form');
+  const input = join.getElementsByClassName('form-control');
+  const error = join.getElementsByClassName('error-message');
 
   function innerReset() {
     for (let i = 0; i < error.length; i++) {
@@ -10,7 +10,7 @@ window.onload = function() {
   }
 
   function checkId() {
-    var idLimit = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    const idLimit = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
     if (!idLimit.test(input[0].value)) {
       error[0].innerHTML = "이메일을 올바르게 입력해주세요.";
       return false;
@@ -19,7 +19,7 @@ window.onload = function() {
   }
 
   function checkPw() {
-    var pwLimit = /^[a-zA-Z0-9~!@#$%^&*()_-]{10,20}$/;
+    const pwLimit = /^[a-zA-Z0-9~!@#$%^&*()_-]{10,20}$/;
     if (!pwLimit.test(input[1].value)) {
       error[1].innerHTML = "10~20자의 영문 소대문자, 숫자와 특수기호 '~!@#$%^&*()_-'만 사용 가능합니다.";
       return false;
@@ -36,7 +36,7 @@ window.onload = function() {
   }
 
   function checkName() {
-    var nameLimit = /^[a-zA-Z가-힣]{2,20}$/;
+    const nameLimit = /^[a-zA-Z가-힣]{2,20}$/;
     if (!nameLimit.test(input[3].value)) {
       error[3].innerHTML = "2~20자의 영문 또는 한글만 사용 가능합니다.";
       return false;
@@ -45,13 +45,17 @@ window.onload = function() {
   }
 
   function checkPhone() {
-    var phoneLimit = /^01[0|1|6|7|8|9]{1}[0-9]{8}$/;
+    const phoneLimit = /^01[0|1|6|7|8|9]{1}[0-9]{8}$/;
     if (!phoneLimit.test(input[4].value)) {
       error[4].innerHTML = "올바른 형식의 휴대폰 번호를 입력해주세요.";
       return false;
     }
     return true;
   }
+
+  //document.getElementById("join-email-input").addEventListener("blur", checkId);
+
+  
 
   join.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
@@ -61,13 +65,13 @@ window.onload = function() {
     if (checkId() && checkPw() && comparePw() && checkName() && checkPhone()) {
       // All fields are valid, proceed with registration
 
-      var email = input[0].value;
-      var password = input[1].value;
-      var name = input[3].value;
-      var phone = input[4].value;
+      const email = input[0].value;
+      const password = input[1].value;
+      const name = input[3].value;
+      const phone = input[4].value;
 
       // Store user data in local storage
-      var userData = {
+      const userData = {
         email: email,
         password: password,
         name: name,
