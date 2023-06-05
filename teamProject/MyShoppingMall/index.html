@@ -51,8 +51,14 @@
     color: #f8f9fa;
     border-color: #f8f9fa;
   }
+  .col > a {
+    text-decoration: none;
+  }
+  .card-price {
+    display: block;
+    color: black;
+  }
 </style>
-
 
 <link href="../MyShoppingMall/assets/css/carousel.css" rel="stylesheet">
   </head>
@@ -134,14 +140,20 @@
       
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
-      
-                  <div class="card-body">
-                    <p class="card-text"></p>
-                    <div class="d-flex justify-content-between align-items-center"></div>
+                <a href="payment.html" class="card-link">
+                  <div class="card shadow-sm">
+                    <div class="card-img-container">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <image class="" href="assets/img/예시.jpg" width="100%" height="100%"/>
+                      </svg>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title card-price">상품명</h5>
+                      <p class="card-price">10,000원</p>
+                    </div>
                   </div>
-                </div>
+                </a>
+                
               </div>
               <div class="col">
                 <div class="card shadow-sm">
