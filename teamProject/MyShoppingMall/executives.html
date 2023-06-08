@@ -17,6 +17,7 @@
 
 <style>
   main {
+    margin: 37px auto;
     padding: 50px;
     background-color: #f2f2f2;
   }
@@ -26,20 +27,48 @@
     margin-bottom: 20px;
   }
 
+  .row {
+    display: flex;
+    justify-content: center; /* Center align the items */
+    margin: 20px;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+  }
+
   .card {
-    margin-bottom: 20px;
+    padding: 11px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 480px;
   }
 
   .card-img-top {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; /* Adjust the width as desired */
     height: auto;
+    border-radius: 50%;
   }
-
   .card-body {
     text-align: center;
   }
-</style>
 
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    color: #777;
+    margin-bottom: 10px;
+  }
+</style>
 
 </head>
 <body>
@@ -89,42 +118,36 @@
       </header>
 
  
-
-     
-            <main>
-              <h2>Executive Team</h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card">
-                    <img src="path/to/executive1.jpg" class="card-img-top" alt="Executive 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Executive Name 1</h5>
-                      <p class="card-text">Position: CEO</p>
-                      <p class="card-text">Email: executive1@example.com</p>
-                    </div>
+      <main>
+        <div class="main-container">
+          <div class="container text-center">
+            <h2>Executive Team</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="assets/img/프로필.png" class="card-img-top rounded-circle" alt="Executive 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Executive Name 1</h5>
+                    <p class="card-text">Position: CEO</p>
+                    <p class="card-text">Email: executive1@example.com</p>
                   </div>
                 </div>
-                <div class="col-md-6"></div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="assets/img/프로필.png" class="card-img-top rounded-circle" alt="Executive 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Executive Name 2</h5>
+                    <p class="card-text">Position: CTO</p>
+                    <p class="card-text">Email: executive2@example.com</p>
+                  </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-6"></div>
-                <div class="col-md-6">
-                  <div class="card">
-                    <img src="path/to/executive2.jpg" class="card-img-top" alt="Executive 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Executive Name 2</h5>
-                      <p class="card-text">Position: CTO</p>
-                      <p class="card-text">Email: executive2@example.com</p>
-                    </div>
-                 </div>
-            
-                 </div>
-                 </div>
-       
-            </main>
-       
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
       
-            
       
      </div>
       <footer>
