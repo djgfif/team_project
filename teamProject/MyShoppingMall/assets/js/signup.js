@@ -10,7 +10,7 @@ window.onload = function() {
   }
 
   function checkId() {
-    const idLimit = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    const idLimit = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i;
     if (!idLimit.test(input[0].value)) {
       error[0].innerHTML = "이메일을 올바르게 입력해주세요.";
       return false;
@@ -19,9 +19,9 @@ window.onload = function() {
   }
 
   function checkPw() {
-    const pwLimit = /^[a-zA-Z0-9~!@#$%^&*()_-]{10,20}$/;
+    const pwLimit = /^(?=.*[a-zA-Z])(?=.*\d|[!@#$%^&*()_-])[a-zA-Z\d!@#$%^&*()_-]{8,20}$/;
     if (!pwLimit.test(input[1].value)) {
-      error[1].innerHTML = "10~20자의 영문 소대문자, 숫자와 특수기호 '~!@#$%^&*()_-'만 사용 가능합니다.";
+      error[1].innerHTML = "8~20자의 영문, 숫자, 특수문자 중 2가지 이상으로만 가능합니다.";
       return false;
     }
     return true;
@@ -53,7 +53,35 @@ window.onload = function() {
     return true;
   }
 
-  //document.getElementById("join-email-input").addEventListener("blur", checkId);
+ 
+  function validateInput(index) {
+    innerReset();
+    switch (index) {
+      case 0:
+        checkId();
+        break;
+      case 1:
+        checkPw();
+        break;
+      case 2:
+        comparePw();
+        break;
+      case 3:
+        checkName();
+        break;
+      case 4:
+        checkPhone();
+        break;
+      default:
+        break;
+    }
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    input[i].addEventListener('input', function() {
+      validateInput(i);
+    });
+  }
 
   
 
