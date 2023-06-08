@@ -1,0 +1,142 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> vertical-layout </title>	
+	
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/header.css"/>
+
+<style>
+  /* Custom CSS for the main section */
+  main {
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+
+  main h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  main p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  main .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  main .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  main .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="body-content">
+	<header>
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">로고</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">HOME</a>
+                </li>
+								<li class="nav-item">
+									<div id="nav-drop" class="w3-dropdown-hover">
+									<a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')"> EVENT</a>
+									</div>
+							</li>
+                <li class="nav-item">
+                   <div id="nav-drop" class="w3-dropdown-hover">
+                      <a class="w3-bar-item w3-button menu" href="photo.html" onclick="scrolling(event,'#page')"><i class="fa fa-th"></i> PROUDUCT</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <div id="nav-drop" class="w3-dropdown-hover">
+                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">ABOUT</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    </div>
+                  </div>
+              </li>
+              </ul>
+              <div id="text-area" class="text-end">
+                <div id="login-area">
+                  <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
+                  <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>About Our Company</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque sollicitudin ligula a aliquet. Suspendisse potenti. Sed efficitur leo nec venenatis fermentum.</p>
+              <p>Nullam feugiat congue massa, ac aliquam est porta at. Nullam aliquam magna in libero commodo, nec posuere tortor auctor.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-6">
+              <!-- <img src="#" alt="Company Image" class="img-fluid"> -->
+            </div>
+          </div>
+
+          <div class="row" style="text-align: right;">
+            <div class="col-md-6">
+              <!-- <img src="#" alt="Company Image" class="img-fluid"> -->
+            </div>
+            <div class="col-md-6">
+              <h2>About Our Company</h2>
+              <p>The pain itself is important, it will be followed by the education system. But the chocolate is a concern for the trucks. Smartphones But it is not a poisoned leaven.</p>
+              <p>There is no mass of feugiat homework, and there is some gate at. There is no great advantage in the free, nor to place the author.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+          
+        </div>
+      </main>
+      
+
+      </div>
+      <footer>
+        <a href="#container" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
