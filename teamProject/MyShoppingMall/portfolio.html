@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Parallax Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<style>
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+    * {
+        font-family: "Lato", sans-serif;
+    }
+    body {
+        height: 100vh;
+        color: #101010;
+        line-height: 1.8em;
+        margin: 0;
+    }
+    #flex {
+        display: flex;
+    }
+    .text {
+        margin: 10px;
+        
+    }
+    
+    .img-1 {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image: url(country/korea/NF.png);
+        min-height: 100%;
+    }
+    .img-2 {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image: url(country/korea/house.1.jpg);
+        min-height: 100%;
+    }
+    .img-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image: url(country/korea/food.jpg);
+        min-height: 100%;
+    } 
+    #login-area {
+        margin-left: 90%;
+    }
+    #login-area button {
+        margin-left: 10px;
+        border-radius: 20px;
+        padding: 10px 16px;
+        font-size: 1px;
+    }
+    #login-area button {
+    
+    border-color: #fff;
+    }
+
+    
+
+    #login-area button.btn-warning {
+    }
+
+    #login-area button.btn-warning:hover {
+    background-color: #e39b00;
+    border-color: #e39b00;
+}
+</style>
+<body>
+<!-- 메뉴(Navbar) -->
+<div class="w3-top">
+    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button menu" href="javascript:void(0)" >logo</a>
+        <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#home')">HOME</a>
+        <a class="w3-bar-item w3-button menu" href="javascript:void(0)" ><i class="fa fa-user"></i> EVENT</a>
+        <a class="w3-bar-item w3-button menu" href="javascript:void(0)" ><i class="fa fa-th"></i> COUNTRY</a>
+        <div class="w3-dropdown-hover">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)"> COMPANY</a>
+             <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+        </div>
+            <div id="text-area" class="text-end">
+                <div id="login-area">
+                  <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
+                  <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
+                </div>
+            </div>
+        </div>
+        </ul>
+          </div>
+<!-- 첫번째 패럴랙스 배경 -->
+<div class="img-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">KOREAN</span>
+    </div>
+</div>
+    
+<!-- Container (About Section) -->
+<div class="w3-container w3-content w3-padding-64">
+  <h3 class="w3-center">대한민국</h3>
+  <p class="w3-center"><em>푸르른 산들과 아름다운 바다의 나라, 대한민국</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>면적 : 1,004만 1,259.87㏊<br>인구
+5,155만 8,034명<br>'태극기'의 흰 바탕은 백의민족의 순수성을, 가운데의 태극 무늬는 음과 양의 조화를 나타내지요. 네 모서리의 사괘는 음과 양이 변화하고 발전하는 모습을 구체화한 것으로 하늘, 땅, 달을 뜻합니다. </p></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312866.433252556!2d127.8733!3d35.819050000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356455ebcb11ba9b%3A0x91249b00ba88db4b!2z64yA7ZWc66-86rWt!5e0!3m2!1sko!2skr!4v1686205163477!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+    <div class="img-2 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">Gyeongbokgung</span>
+    </div>
+</div>
+    
+<div class="w3-container w3-content w3-padding-64">
+  <h3 class="w3-center">경복궁</h3>
+  <p class="w3-center"><em>오랜 역사와 전통이 고스란히 간직된 대한민국의 궁궐</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>건립시기:1395년-태조 4<br>면적 : 43만 2702.87㎡<br> 위치:서울특별시 종로구 세종 1<br>경복궁은 대한민국의 조선시대 궁궐로 역사적인 가치와 아름다움을 지니고 있으며, 대한민국의 국보로 지정되어있고 서울에 위치해 있습니다. 궁궐 내부에는 경회루와 경복전 등 다양한 건물과 문화유적이 있어 관광객들에게 인기를 끌고 있습니다. 또한 전통적인 문화 체험과 아름다운 정원, 사진 촬영의 매력도 높아 대한민국의 대표적인 관광 명소 중 하나입니다. </p></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50591.32098707137!2d126.90082334863284!3d37.57961700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1686234218568!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+    
+    <div class="img-3 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">KIMCHI</span>
+    </div>
+    
+</div>
+<div class="w3-container w3-content w3-padding-64" id="about">
+  <h3 class="w3-center">김치</h3>
+  <p class="w3-center"><em>"한국을 대표하는 음식"</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>김치는 대한민국의 대표적인 발효 식품으로, 신선한 채소와 고춧가루, 다양한 재료를 함께 발효시켜 만들어집니다. 고추 맛과 짠 맛, 그리고 신맛과 단 맛이 조화로워 풍부한 맛과 향을 지니고 있으며, 소화를 도와주고 장 건강에도 도움을 주는 음식으로 무려 300종류가 넘습니다. 한국 음식의 필수 요소로 사용되며, 국내외에서 많은 사랑을 받고 있는 음식입니다. </p></div>
+    <div class="map">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K55CPyYTUJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div>
+</div>
+        <div >
+            <div class="w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+                <i class="fa fa-phone  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+                <i class="fa fa-envelope  fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+            </div>
+          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// 화면을 부드럽게 스크롤링하기
+function scrolling(evt, loc) {
+    var menus, i;
+    menus = document.getElementsByClassName("menu");
+    for(i=0; i<menus.length; i++) {
+        menus[i].className = menus[i].className.replace(" w3-red", "");
+    }
+    evt.currentTarget.className += " w3-red";
+    var offset = $(loc).offset();
+    $('html, body').animate({scrollTop: offset.top}, 800);
+}
+</script>
+</body>
+</html>
