@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .content {
+        margin-bottom: 20px;
+      }
+
+      .button-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">로고</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <div id="nav-drop" class="w3-dropdown-hover">
+                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')"> EVENT</a>
+                  </div>
+              </li>
+                <li class="nav-item">
+                   <div id="nav-drop" class="w3-dropdown-hover">
+                      <a class="w3-bar-item w3-button menu" href="photo.html" onclick="scrolling(event,'#page')"><i class="fa fa-th"></i> PROUDUCT</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <div id="nav-drop" class="w3-dropdown-hover">
+                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">ABOUT</a>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    </div>
+                  </div>
+              </li>
+  
+              </ul>
+              <div id="text-area" class="text-end">
+                <div id="login-area">
+                  <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
+                  <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="content">
+        <p class="lead">
+          We are a leading company in our industry, providing innovative solutions and exceptional services to our clients.
+          With a team of highly skilled professionals, we deliver cutting-edge products and exceed customer expectations.
+          Our commitment to quality, customer satisfaction, and continuous improvement sets us apart from the competition.
+        </p>
+        <p class="lead">
+          Our mission is to empower businesses and individuals with the tools and technologies they need to succeed.
+          We strive to build long-term partnerships based on trust, reliability, and mutual growth.
+          Through our dedication and passion, we aim to make a positive impact on the lives of our clients and the community.
+        </p>
+      </section>
+      <div class="button-container">
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
