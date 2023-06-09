@@ -20,49 +20,6 @@ body {
   padding-bottom: 20px; /* Update the padding-bottom value to provide space for the footer */
 }
 
-header {
-    padding: 20px;
-    color: #FFFFFF;
-    text-align: center;
-}
-  
-h1 {
-    font-size: 36px;
-}
-  
-/* 내비게이션 스타일 */
-nav {
-  background-color: #283593;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-}
-  
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-
-nav ul li a {
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 5px 10px;
-    border-radius: 5px;
-	    transition: background-color 0.3s, color 0.3s;
-}
-#nav-drop {
-	background-color: #283593;
-	color: white;
-}
-nav ul li a:hover {
-	background-color: #FFFFFF;
-	color: #283593;
-}
-
 main {
 	margin: auto;
 	box-sizing: border-box;
@@ -84,6 +41,7 @@ main ul li {
 	margin-right: 20px;
 	width: 100px;
 	height: 26px;
+	list-style: none;
 }
 main ul li a {
 	display: block;
@@ -93,6 +51,7 @@ main ul li a {
 	color: #aaa;
 	letter-spacing: 1px;
 	text-align: center;
+	text-decoration-line: none;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 	background: #fff;
@@ -142,26 +101,6 @@ main section article div p {
 }
 
 
-/* 푸터 스타일 */
-footer {
-  width: 100%;
-  position: fixed; /* Change the position to fixed */
-  bottom: 0;
-  left: 0;
-  background-color: #283593;
-  padding: 20px;
-  color: #FFFFFF;
-  text-align: center;
-}
- 
- .footer-link {
-   color: #FFFFFF;
-   text-decoration: none;
- }
- 
- .footer-link:hover {
-   text-decoration: underline;
- }
 @media screen and (max-width: 1599px) {
 	header {
 		width: 350px;

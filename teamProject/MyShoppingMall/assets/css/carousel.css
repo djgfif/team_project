@@ -22,12 +22,25 @@ body {
   z-index: 10;
 }
 
+.carousel-inner {
+  /* width: 80%; */
+  margin: 0 auto;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  overflow: hidden;
 }
 
-
+#myCarousel .carousel-inner .carousel-item img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 

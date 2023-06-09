@@ -1,6 +1,6 @@
 window.onload = function() {
   const join = document.getElementById('registration-form');
-  const input = join.getElementsByClassName('form-control');
+  const input = join.getElementsByClassName('inputText');
   const error = join.getElementsByClassName('error-message');
 
   function innerReset() {

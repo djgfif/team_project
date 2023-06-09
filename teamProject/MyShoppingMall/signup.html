@@ -8,17 +8,58 @@
     <style>
       /* Custom Styles */
       .form-container {
-        max-width: 400px;
-        margin: 0 auto;
+        max-width: 500px;
+        min-height: 614px;
+        margin: 37px auto;
         padding: 20px;
-        background-color: #f4f4f4;
+      
         border: 1px solid #ccc;
-        border-radius: 5px;
+
+      }
+      .uInputArea {
+        margin: 17px;
+        padding: 4px;
       }
 
-      .form-container label {
+      .col {
+        display: table;
+        width: 100%;
+        height: 30px;
+        padding: 10px 0 4px;
+        border-bottom: 1px solid #000;
+      }
+
+      .uInputArea .inputBox {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .uInputArea label {
+        font-size: 15px;
+        line-height: 30px;
+        color: #000;
+        float: left;
         font-weight: bold;
       }
+
+      .uInputArea .inputBox .inputText {
+        font-size: 15px;
+        line-height: 30px;
+        color: #000;
+        display: block;
+        width: 100%;
+        height: 30px;
+        padding: 0 25px 0 10px;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+        background: none;
+    }
+
+    .uinput .inputBox {
+        overflow: hidden;
+        position: relative;
+      } 
 
       /* Adjust Spacing */
       .my-3:not(:last-child) {
@@ -35,28 +76,13 @@
       }
 
       .error-message {
+        font-size: 13px;
+        line-height: 20px;
         color: red;
-        font-size: 0.8rem;
+        margin-top: 5px;
+        padding: 0 5px;
       }
-
-      #join-email-input {
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        padding: 8px;
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      #join-email-input:focus {
-        outline: none;
-        border-color: #0069d9;
-        box-shadow: 0 0 5px rgba(0, 105, 217, 0.3);
-      }
-
-      .uinput .inputBox {
-        overflow: hidden;
-        position: relative;
-      }
+      
     </style>
   </head>
   <body>
@@ -67,38 +93,61 @@
       <main>
         <div class="form-container">
           <form id="registration-form">
-            <div class="my-3 uinput">
-              <label for="join-email-input" class="form-label">아이디(이메일)</label>
+            <div class="uInputArea">
+              <div class="col">
+                <label for="join-email-input" class="form-label">아이디(이메일)</label>
+                  <div class="inputBox">
+                    <input type="email" class="inputText" id="join-email-input" placeholder="" required>
+                  </div>
+                </div>
+              <div id="email-error" class="error-message"></div>
             </div>
-            <div class="inputBox">
-              <input type="email" class="form-control" id="join-email-input" placeholder="" required>
-              <span id="email-error" class="error-message"></span>
-            </div>
-            <div class="my-3">
+            <div class="uInputArea">
+              <div class="col">
               <label for="join-password-input" class="form-label">비밀번호</label>
-              <input type="password" class="form-control" id="join-password-input" placeholder="8~20자의 영문, 숫자, 특수문자" required>
-              <span id="password-error" class="error-message"></span>
+              <div class="inputBox">
+              <input type="password" class="inputText" id="join-password-input" placeholder="8~20자의 영문, 숫자, 특수문자" required>
+              </div>
+              </div>
+              <div id="password-error" class="error-message"></div>
             </div>
-            <div class="my-3">
+            <div class="uInputArea">
+              <div class="col">
               <label for="join-passwordCheck-input" class="form-label">비밀번호 확인</label>
-              <input type="password" class="form-control" id="join-passwordCheck-input" placeholder="8~20자의 영문, 숫자, 특수문자" required>
-              <span id="passwordCheck-error" class="error-message"></span>
+              <div class="inputBox">
+              <input type="password" class="inputText" id="join-passwordCheck-input" placeholder="8~20자의 영문, 숫자, 특수문자" required>
+              </div>
+              </div>
+              <div id="passwordCheck-error" class="error-message"></div>
             </div>
-            <div class="my-3">
+
+            
+            <div class="uInputArea">
+              <div class="col">
               <label for="join-name-input" class="form-label">이름</label>
-              <input type="text" class="form-control" id="join-name-input" required>
-              <span id="name-error" class="error-message"></span>
+              <div class="inputBox">
+                <input type="text" class="inputText" id="join-name-input" required>
+              </div>
+              </div>
+              <div id="name-error" class="error-message"></div>
             </div>
-            <div class="my-3">
+  
+            <div class="uInputArea">
+              <div class="col">
               <label for="join-phone-input" class="form-label">휴대폰 번호</label>
-              <input type="tel" class="form-control" id="join-phone-input" placeholder="010 1234 5678" required>
-              <span id="phone-error" class="error-message"></span>
+              <div class="inputBox">
+              <input type="tel" class="inputText" id="join-phone-input" placeholder="010 1234 5678" required>
+              </div>
+              </div>
+              <div id="phone-error" class="error-message"></div>
             </div>
             <div class="text-center">
               <button type="submit" class="w-100 btn btn-primary px-4">가입하기</button>
             </div>
           </form>
         </div>
+        
+      </div>
       </main>
     </div>
 
