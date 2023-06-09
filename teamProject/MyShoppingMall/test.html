@@ -1,103 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+    <title>My Parallax Website</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Company Introduction</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      /* Custom Styles */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-      }
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<style>
+    /* ::-webkit-scrollbar { 
+        display: none; 
+    } */
 
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
+    * {
+        font-family: "Lato", sans-serif;
+    }
+    #flex {
+        display: flex;
+    }
+    .text {
+        margin: 10px;
+        
+    }
+    
+    .img-1, .img-2, .img-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-1 {
+    background-image: url(country/korea/NF.png);
+}
+.img-2 {
+    background-image: url(country/korea/house.1.jpg);
+}
+.img-3 {
+    background-image: url(country/korea/food.jpg);
+}
 
-      .header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
 
-      .content {
-        margin-bottom: 20px;
-      }
-
-      .button-container {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav class="navbar navbar-expand-md fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">로고</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <div id="nav-drop" class="w3-dropdown-hover">
-                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')"> EVENT</a>
-                  </div>
-              </li>
-                <li class="nav-item">
-                   <div id="nav-drop" class="w3-dropdown-hover">
-                      <a class="w3-bar-item w3-button menu" href="photo.html" onclick="scrolling(event,'#page')"><i class="fa fa-th"></i> PROUDUCT</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                  <div id="nav-drop" class="w3-dropdown-hover">
-                  <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">ABOUT</a>
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                      <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                      <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                    </div>
-                  </div>
-              </li>
+</style>
+<body>
+  <div>
   
-              </ul>
-              <div id="text-area" class="text-end">
-                <div id="login-area">
-                  <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
-                  <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
-                </div>
+<!-- 메뉴(Navbar) -->
+<header>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">로고</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">HOME</a>
+          </li>
+          <li class="nav-item">
+            <div id="nav-drop" class="w3-dropdown-hover">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')"> EVENT</a>
+            </div>
+        </li>
+          <li class="nav-item">
+             <div id="nav-drop" class="w3-dropdown-hover">
+                <a class="w3-bar-item w3-button menu" href="photo.html" onclick="scrolling(event,'#page')"><i class="fa fa-th"></i> PROUDUCT</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <div id="nav-drop" class="w3-dropdown-hover">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">ABOUT</a>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="company.html" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
               </div>
             </div>
+        </li>
+
+        </ul>
+        <div id="text-area" class="text-end">
+          <div id="login-area">
+            <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
+            <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
           </div>
-        </nav>
-      </header>
-      <section class="content">
-        <p class="lead">
-          We are a leading company in our industry, providing innovative solutions and exceptional services to our clients.
-          With a team of highly skilled professionals, we deliver cutting-edge products and exceed customer expectations.
-          Our commitment to quality, customer satisfaction, and continuous improvement sets us apart from the competition.
-        </p>
-        <p class="lead">
-          Our mission is to empower businesses and individuals with the tools and technologies they need to succeed.
-          We strive to build long-term partnerships based on trust, reliability, and mutual growth.
-          Through our dedication and passion, we aim to make a positive impact on the lives of our clients and the community.
-        </p>
-      </section>
-      <div class="button-container">
-        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
       </div>
     </div>
+  </nav>
+</header>
+<main>
+<!-- 첫번째 패럴랙스 배경 -->
+<div class="img-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">KOREAN</span>
+    </div>
+</div>
+    
+<!-- Container (About Section) -->
+<div class="w3-container w3-content w3-padding-64">
+  <h3 class="w3-center">대한민국</h3>
+  <p class="w3-center"><em>푸르른 산들과 아름다운 바다의 나라, 대한민국</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>면적 : 1,004만 1,259.87㏊<br>인구
+5,155만 8,034명<br>'태극기'의 흰 바탕은 백의민족의 순수성을, 가운데의 태극 무늬는 음과 양의 조화를 나타내지요. 네 모서리의 사괘는 음과 양이 변화하고 발전하는 모습을 구체화한 것으로 하늘, 땅, 달을 뜻합니다. </p></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312866.433252556!2d127.8733!3d35.819050000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356455ebcb11ba9b%3A0x91249b00ba88db4b!2z64yA7ZWc66-86rWt!5e0!3m2!1sko!2skr!4v1686205163477!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+    <div class="img-2 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">Gyeongbokgung</span>
+    </div>
+</div>
+    
+<div class="w3-container w3-content w3-padding-64">
+  <h3 class="w3-center">경복궁</h3>
+  <p class="w3-center"><em>오랜 역사와 전통이 고스란히 간직된 대한민국의 궁궐</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>건립시기:1395년-태조 4<br>면적 : 43만 2702.87㎡<br> 위치:서울특별시 종로구 세종 1<br>경복궁은 대한민국의 조선시대 궁궐로 역사적인 가치와 아름다움을 지니고 있으며, 대한민국의 국보로 지정되어있고 서울에 위치해 있습니다. 궁궐 내부에는 경회루와 경복전 등 다양한 건물과 문화유적이 있어 관광객들에게 인기를 끌고 있습니다. 또한 전통적인 문화 체험과 아름다운 정원, 사진 촬영의 매력도 높아 대한민국의 대표적인 관광 명소 중 하나입니다. </p></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50591.32098707137!2d126.90082334863284!3d37.57961700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1686234218568!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+    
+    <div class="img-3 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">KIMCHI</span>
+    </div>
+    
+</div>
+<div class="w3-container w3-content w3-padding-64" id="about">
+  <h3 class="w3-center">김치</h3>
+  <p class="w3-center"><em>"한국을 대표하는 음식"</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>김치는 대한민국의 대표적인 발효 식품으로, 신선한 채소와 고춧가루, 다양한 재료를 함께 발효시켜 만들어집니다. 고추 맛과 짠 맛, 그리고 신맛과 단 맛이 조화로워 풍부한 맛과 향을 지니고 있으며, 소화를 도와주고 장 건강에도 도움을 주는 음식으로 무려 300종류가 넘습니다. 한국 음식의 필수 요소로 사용되며, 국내외에서 많은 사랑을 받고 있는 음식입니다. </p></div>
+    <div class="map">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K55CPyYTUJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</main>
+<!-- Footer -->
+<footer>
+  <a href="#container" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+</div>
+</body>
 </html>
-
