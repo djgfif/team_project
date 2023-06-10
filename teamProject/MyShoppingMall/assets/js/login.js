@@ -7,14 +7,14 @@ window.onload = function() {
 
   emailInput.addEventListener('input', handleInput);
   passwordInput.addEventListener('input', handleInput);
-  
+
   function handleInput() {
     if (emailInput.value !== '') {
       emailLabel.style.display = 'none';
     } else {
       emailLabel.style.display = 'block';
     }
-  
+
     if (passwordInput.value !== '') {
       passwordLabel.style.display = 'none';
     } else {
@@ -46,7 +46,7 @@ window.onload = function() {
     } else {
       // User is not authenticated, display an error message
       console.log('Invalid credentials');
-      alert('Invalid email or password');
+      alert('입력하신 정보가 올바르지 않습니다.');
     }
   });
 };
