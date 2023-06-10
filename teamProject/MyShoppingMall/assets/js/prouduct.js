@@ -6,7 +6,8 @@ window.addEventListener('load', ()=>{
         columnWidth: 'article',
         transitionDuration: '0.5s'
     });
-    const btns = document.querySelectorAll('main ul li');
+    // const btns = document.querySelectorAll('main ul li');
+    const btns = document.querySelectorAll('li');
     for(let e of btns) {
         e.addEventListener('click', e=>{
            const sort = 
@@ -21,5 +22,10 @@ window.addEventListener('load', ()=>{
         });
     }
 });
+
+
+
+
+
 
 
