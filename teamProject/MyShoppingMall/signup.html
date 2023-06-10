@@ -5,85 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>회원가입</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      /* Custom Styles */
-      .form-container {
-        max-width: 500px;
-        min-height: 614px;
-        margin: 37px auto;
-        padding: 20px;
-      
-        border: 1px solid #ccc;
+    <link href="assets/css/signup.css" rel="stylesheet"> 
 
-      }
-      .uInputArea {
-        margin: 17px;
-        padding: 4px;
-      }
-
-      .col {
-        display: table;
-        width: 100%;
-        height: 30px;
-        padding: 10px 0 4px;
-        border-bottom: 1px solid #000;
-      }
-
-      .uInputArea .inputBox {
-        overflow: hidden;
-        position: relative;
-      }
-
-      .uInputArea label {
-        font-size: 15px;
-        line-height: 30px;
-        color: #000;
-        float: left;
-        font-weight: bold;
-      }
-
-      .uInputArea .inputBox .inputText {
-        font-size: 15px;
-        line-height: 30px;
-        color: #000;
-        display: block;
-        width: 100%;
-        height: 30px;
-        padding: 0 25px 0 10px;
-        box-sizing: border-box;
-        border: 0;
-        outline: 0;
-        background: none;
-    }
-
-    .uinput .inputBox {
-        overflow: hidden;
-        position: relative;
-      } 
-
-      /* Adjust Spacing */
-      .my-3:not(:last-child) {
-        margin-bottom: 1.5rem;
-      }
-
-      .px-4 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-
-      .mt-4 {
-        margin-top: 1.5rem;
-      }
-
-      .error-message {
-        font-size: 13px;
-        line-height: 20px;
-        color: red;
-        margin-top: 5px;
-        padding: 0 5px;
-      }
-      
-    </style>
   </head>
   <body>
     <div class="container">
@@ -141,7 +64,7 @@
               </div>
               <div id="phone-error" class="error-message"></div>
             </div>
-            <div class="text-center">
+            <div class="btn-submit">
               <button type="submit" class="w-100 btn btn-primary px-4">가입하기</button>
             </div>
           </form>

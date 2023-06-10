@@ -37,16 +37,20 @@ nav ul li a {
 color: #FFFFFF;
 text-decoration: none;
 padding: 5px 10px;
-  border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+border-radius: 5px;
+transition: background-color 0.3s, color 0.3s;
 }
 #nav-drop {
 background-color: #283593;
 color: white;
 }
 nav ul li a:hover {
-background-color: #FFFFFF;
-color: #283593;
+  background-color: #FFFFFF;
+  color: #283593;
+}
+
+#nav-drop-items {
+  border-radius: 5px;
 }
 
 /* 본문 스타일 */
@@ -59,6 +63,7 @@ footer {
   width: 100%;
   bottom: 0;
   left: 0;
+  position: relative;
   background: linear-gradient(25deg, white, darkblue);
   padding: 20px;
   color: #FFFFFF;

@@ -1,5 +1,27 @@
 window.onload = function() {
   const loginForm = document.getElementById('login-form');
+  const emailInput = document.getElementById('email');
+  const emailLabel = document.getElementById('email-label');
+  const passwordInput = document.getElementById('password');
+  const passwordLabel = document.getElementById('password-label');
+
+  emailInput.addEventListener('input', handleInput);
+  passwordInput.addEventListener('input', handleInput);
+  
+  function handleInput() {
+    if (emailInput.value !== '') {
+      emailLabel.style.display = 'none';
+    } else {
+      emailLabel.style.display = 'block';
+    }
+  
+    if (passwordInput.value !== '') {
+      passwordLabel.style.display = 'none';
+    } else {
+      passwordLabel.style.display = 'block';
+    }
+  }
+
 
   loginForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
