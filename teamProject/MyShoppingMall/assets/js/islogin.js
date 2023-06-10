@@ -16,10 +16,11 @@ window.onload = function() {
 
     const username = document.createElement("span");
     username.textContent = userData.name + "님";
-    username.classList.add("fw-bold");
+    username.classList.add('fw-bold', 'mx-2');
 
     const logout = document.createElement("button");
     logout.textContent = "로그아웃";
+    logout.classList.add('btn', 'btn-outline-light', 'btn-sm', 'ms-auto');
     logout.addEventListener("click", function() {
       // Perform logout actions
       localStorage.setItem('loginYN', false);
