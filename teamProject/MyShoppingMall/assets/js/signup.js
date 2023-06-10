@@ -45,7 +45,8 @@ window.onload = function() {
   }
 
   function checkPhone() {
-    const phoneLimit = /^01[0|1|6|7|8|9]{1}[0-9]{8}$/;
+    const phoneLimit = /^01[0|1|6|7|8|9]{1}\s?\d{4}\s?\d{4}$/;
+
     if (!phoneLimit.test(input[4].value)) {
       error[4].innerHTML = "올바른 형식의 휴대폰 번호를 입력해주세요.";
       return false;
