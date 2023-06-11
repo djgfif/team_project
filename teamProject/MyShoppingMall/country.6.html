@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Parallax Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/header.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<style>
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+
+    * {
+        font-family: "Lato", sans-serif;
+    }
+    #flex {
+        display: flex;
+    }
+    .text {
+        margin: 10px; 
+        width: 110%;  
+    }
+    .map {
+        margin-left: 30px;
+    }
+    
+    .img-1 {
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    } 
+     .img-2, .img-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.img-1 {
+    background-image: url(assets/img/country/france/flag.png);
+}
+.img-2 {
+    background-image: url(assets/img/country/france/lm.jpg);
+}
+.img-3 {
+    background-image: url(assets/img/country/france/food.jpg);
+}
+p {
+  line-height: 190%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+</style>
+<body>
+  <div>
+  
+<!-- 메뉴(Navbar) -->
+<header>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="70px" height="25px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">HOME</a>
+          </li>
+          <li class="nav-item">
+            <div id="nav-drop" class="w3-dropdown-hover">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')"> EVENT</a>
+            </div>
+        </li>
+          <li class="nav-item">
+             <div id="nav-drop" class="w3-dropdown-hover">
+                <a class="w3-bar-item w3-button menu" href="prouduct.html" onclick="scrolling(event,'#page')"><i class="fa fa-th"></i> PROUDUCT</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <div id="nav-drop" class="w3-dropdown-hover">
+            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">ABOUT</a>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="company.html" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+              </div>
+            </div>
+        </li>
+
+        </ul>
+        <div id="text-area" class="text-end">
+          <div id="login-area">
+            <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
+            <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+<!-- 첫번째 패럴랙스 배경 -->
+<div class="img-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-black w3-animate-bottom">FRANCE</span>
+    </div>
+</div>
+    
+<!-- Container (About Section) -->
+<div class="w3-container w3-content w3-padding-64">
+  <h3 class="w3-center">프랑스</h3>
+  <p class="w3-center"><em> 아름다운 석양과 음악의 나라, 프랑스</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p>면적 : 5,490만 8,687㏊<br>인구
+        6,475만 6,584명<br>파란색, 흰색, 빨간색의 3색기로 '자유,평등,박애'를 상징해요. 프랑스 혁명 때 혁명군 총사령관인 라파예트가 시민에게 나눠준 모자의 색에서 유래했어요. 세계 여러나라의 국기에 영향을 주었지요.</p></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5653620.942475826!2d2.0516999500000006!3d46.219264949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2z7ZSE656R7Iqk!5e0!3m2!1sko!2skr!4v1686424812821!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+    <div class="img-2 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">EIFFEL TOWER</span>
+    </div>
+</div>
+    
+<div class="w3-container w3-content w3-padding-64">
+  <h3 class="w3-center">에펠탑</h3>
+  <p class="w3-center"><em> 천공에 닿는 철의 날개</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p style="font-weight: bolder;">에펠탑</p>
+      <p>에펠탑은 프랑스의 수도 파리에 위치한 건축물로, 세계적으로 유명한 랜드마크입니다. 1889년에 완성된 이 건물은 기원전 19세기의 기술적 창조성과 공학의 명작으로 평가받고 있습니다. 에펠탑은 철로 만들어진 탑입니다.</p>
+    <p>높이는 약 324미터에 이르며 파리의 도시 경관을 지배합니다. 이 독특한 구조와 높이는 그 자체로 아름다움을 표현하며, 많은 사람들이 그 정상에서 파리의 아름다운 풍경을 감상할 수 있습니다. 에펠탑은 프랑스 문화와 역사의 상징이자, 파리를 대표하는 아이콘 중 하나로 여겨지고 있습니다.</p></div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991626110953!2d2.2919063764079017!3d48.85837007133205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2z7JeQ7Y6g7YOR!5e0!3m2!1sko!2skr!4v1686424863284!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+    
+    <div class="img-3 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">RATATOUILLE</span>
+    </div>
+    
+</div>
+<div class="w3-container w3-content w3-padding-64" id="about">
+  <h3 class="w3-center">라따뚜이</h3>
+  <p class="w3-center"><em>"프랑스를 대표하는 음식"</em></p>
+    <div class="content" id="flex">
+  <div class="text">
+      <p style="font-weight: bolder;">라따뚜이</p>
+      <p>프랑스의 전통적인 채소 요리로, 주로 프로방스 지역에서 유래되었습니다. 이 요리는 다양한 신선한 채소를 썬 후 스튜 형태로 조리하는데, 주로 토마토, 가지, 파프리카, 쿠스쿠스, 양파 등을 사용합니다. 이들 채소는 오일과 함께 소금, 후추, 허브로 향을 낸 후 서서히 익혀낸다고 합니다. 라따뚜이는 가볍고 건강한 채소 요리로, 다양한 색상과 풍미를 담고 있습니다. 프랑스에서는 주로 사이드 디시 혹은 요리의 구성 요소로서 즐겨먹으며, 채소의 신선한 맛과 조화로운 조리 방식으로 유명합니다.</p>
+      </div>
+    <div class="map">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K55CPyYTUJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div>
+
+</main>
+<!-- Footer -->
+<footer>
+  <a href="#container" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+</div>
+
+<script src="../MyShoppingMall/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/islogin.js"></script>
+</body>
+</html>
