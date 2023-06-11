@@ -12,7 +12,7 @@ window.onload = function() {
     loginForm.style.display = "none";
 
     const icon = document.createElement("i");
-    icon.classList.add("bi", "bi-person", "me-2", "display-6"); // Add "display-1" class to make the icon larger
+    icon.classList.add("bi", "bi-person", "me-2", "display-6"); 
 
     const username = document.createElement("span");
     username.textContent = userData.name + "님";
