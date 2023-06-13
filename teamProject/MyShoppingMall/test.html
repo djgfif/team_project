@@ -1,167 +1,127 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>My Parallax Website</title>
-    <meta charset="UTF-8">
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-</head>
-<style>
-    ::-webkit-scrollbar { 
-        display: none; 
-    }
+    <script src="assets/js/pageLayout.js" defer></script>
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div>
+      <header id="header"></header>
 
-    * {
-        font-family: "Lato", sans-serif;
-    }
-    #flex {
-        display: flex;
-    }
-    .text {
-        margin: 10px;
-        
-    }
-    
-    .img-1, .img-2, .img-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-}
-.img-1 {
-    background-image: url(country/korea/NF.png);
-}
-.img-2 {
-    background-image: url(country/korea/house.1.jpg);
-}
-.img-3 {
-    background-image: url(country/korea/food.jpg);
-}
+      <main>
 
-
-</style>
-<body>
-  <div>
-  
-<!-- 메뉴(Navbar) -->
-<header>
-  <nav class="navbar navbar-expand-md fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">로고</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">HOME</a>
-          </li>
-          <li class="nav-item">
-            <div id="nav-drop" class="w3-dropdown-hover">
-            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')"> EVENT</a>
-            </div>
-        </li>
-          <li class="nav-item">
-             <div id="nav-drop" class="w3-dropdown-hover">
-                <a class="w3-bar-item w3-button menu" href="photo.html" onclick="scrolling(event,'#page')"><i class="fa fa-th"></i> PROUDUCT</a>
-              </div>
-          </li>
-          <li class="nav-item">
-            <div id="nav-drop" class="w3-dropdown-hover">
-            <a class="w3-bar-item w3-button menu" href="javascript:void(0)" onclick="scrolling(event,'#page')">ABOUT</a>
-              <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="company.html" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-              </div>
-            </div>
-        </li>
-
-        </ul>
-        <div id="text-area" class="text-end">
-          <div id="login-area">
-            <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
-            <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/airplane.jpg">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/cruise.jpg">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/travel.jpg">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
-    </div>
-  </nav>
-</header>
-<main>
-<!-- 첫번째 패럴랙스 배경 -->
-<div class="img-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space: nowrap">
-        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">KOREAN</span>
-    </div>
-</div>
-    
-<!-- Container (About Section) -->
-<div class="w3-container w3-content w3-padding-64">
-  <h3 class="w3-center">대한민국</h3>
-  <p class="w3-center"><em>푸르른 산들과 아름다운 바다의 나라, 대한민국</em></p>
-    <div class="content" id="flex">
-  <div class="text">
-      <p>면적 : 1,004만 1,259.87㏊<br>인구
-5,155만 8,034명<br>'태극기'의 흰 바탕은 백의민족의 순수성을, 가운데의 태극 무늬는 음과 양의 조화를 나타내지요. 네 모서리의 사괘는 음과 양이 변화하고 발전하는 모습을 구체화한 것으로 하늘, 땅, 달을 뜻합니다. </p></div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312866.433252556!2d127.8733!3d35.819050000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356455ebcb11ba9b%3A0x91249b00ba88db4b!2z64yA7ZWc66-86rWt!5e0!3m2!1sko!2skr!4v1686205163477!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    </div>
-</div>
-    <div class="img-2 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space: nowrap">
-        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">Gyeongbokgung</span>
-    </div>
-</div>
-    
-<div class="w3-container w3-content w3-padding-64">
-  <h3 class="w3-center">경복궁</h3>
-  <p class="w3-center"><em>오랜 역사와 전통이 고스란히 간직된 대한민국의 궁궐</em></p>
-    <div class="content" id="flex">
-  <div class="text">
-      <p>건립시기:1395년-태조 4<br>면적 : 43만 2702.87㎡<br> 위치:서울특별시 종로구 세종 1<br>경복궁은 대한민국의 조선시대 궁궐로 역사적인 가치와 아름다움을 지니고 있으며, 대한민국의 국보로 지정되어있고 서울에 위치해 있습니다. 궁궐 내부에는 경회루와 경복전 등 다양한 건물과 문화유적이 있어 관광객들에게 인기를 끌고 있습니다. 또한 전통적인 문화 체험과 아름다운 정원, 사진 촬영의 매력도 높아 대한민국의 대표적인 관광 명소 중 하나입니다. </p></div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50591.32098707137!2d126.90082334863284!3d37.57961700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z6rK967O16raB!5e0!3m2!1sko!2skr!4v1686234218568!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    </div>
-</div>
-    
-    <div class="img-3 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space: nowrap">
-        <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">KIMCHI</span>
-    </div>
-    
-</div>
-<div class="w3-container w3-content w3-padding-64" id="about">
-  <h3 class="w3-center">김치</h3>
-  <p class="w3-center"><em>"한국을 대표하는 음식"</em></p>
-    <div class="content" id="flex">
-  <div class="text">
-      <p>김치는 대한민국의 대표적인 발효 식품으로, 신선한 채소와 고춧가루, 다양한 재료를 함께 발효시켜 만들어집니다. 고추 맛과 짠 맛, 그리고 신맛과 단 맛이 조화로워 풍부한 맛과 향을 지니고 있으며, 소화를 도와주고 장 건강에도 도움을 주는 음식으로 무려 300종류가 넘습니다. 한국 음식의 필수 요소로 사용되며, 국내외에서 많은 사랑을 받고 있는 음식입니다. </p></div>
-    <div class="map">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/K55CPyYTUJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    </div>
-
-</main>
-<!-- Footer -->
-<footer>
-  <a href="#container" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+            
+        <div class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+      
+                  <div class="card-body">
+                    <p class="card-text"></p>
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+      
+      </main>
+        <!-- FOOTER -->
+      <footer id="footer" class="w3-center w3-padding-64"></footer>
+      
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-</div>
-</body>
+
+    <script src="assets/js/sendsort.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/islogin.js"></script>
+  </body>
 </html>

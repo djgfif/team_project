@@ -14,18 +14,12 @@ html, body {
 body {
 	background: #efefef;
 }
-#body-wrapper {
-	min-height: 100%;
-	position: relative;
-}
-
 
 main {
 	margin: 17px auto;
 	box-sizing: border-box;
 	padding: 20px;
-	
-	
+	min-height: 720px;
 }
 main ul {
 	width: 100%;
@@ -102,7 +96,11 @@ main section article div p {
 	margin-bottom: 15px;
 }
 
+/* footer {
+	position: absolute;
+} */
 
+/* 
 @media screen and (max-width: 1599px) {
 	header {
 		width: 350px;
@@ -186,4 +184,4 @@ main section article div p {
 	}
 }
 
-
+ */
