@@ -102,9 +102,6 @@ main section article div p {
 	margin-bottom: 15px;
 }
 
-footer {
-	position: absolute;
-}
 
 @media screen and (max-width: 1599px) {
 	header {
