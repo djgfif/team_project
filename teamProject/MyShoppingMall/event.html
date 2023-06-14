@@ -54,7 +54,6 @@
   <body>
     <div>
       <header id="header"></header>
-
         <main>
             <nav class="navigation">
               <ul class="nav1">
@@ -63,22 +62,34 @@
                   <li class="nav1-item3">EVENT</li>
               </ul>
           </nav>
-          <section><img src="assets/img/event.1.png" width=100% height=1000px></section>
-          <section><div class="nav2">
-            <a href="event.html"><div class="nav2-item1  me-3">1</div></a>
-            <a href="event.2.html"><div class="nav2-item2  me-1">2</div></a>
-            
-        </div></section>
+          <section><img src="assets/img/event.1.png" id="event-image" width=100% height=1000px></section>
+          <section>
+            <div class="nav2">
+              <a id="event1" class="nav2-item1  me-3">1</a>
+              <a id="event2" class="nav2-item2  me-1">2</a>
+            </div>
+          </section>
         </main>
-        
-
-        
         <!-- FOOTER -->
         <footer id="footer"></footer>
       </main>
-      
-      
     </div>
-
+    <script>
+      // Get the event link and event image elements
+      const event1 = document.getElementById("event1");
+      const event2 = document.getElementById("event2");
+      const eventImage = document.getElementById("event-image");
+  
+      // Add a click event listener to the event links
+      event1.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        eventImage.src = "assets/img/event.1.png"; 
+      });
+  
+      event2.addEventListener("click", function(event) {
+        event.preventDefault();
+        eventImage.src = "assets/img/evnt.2.jpg"; 
+      });
+    </script>
   </body>
 </html>

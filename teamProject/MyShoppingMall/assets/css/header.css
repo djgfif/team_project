@@ -80,7 +80,9 @@ footer {
   color: #FFFFFF;
   text-align: center;
 }
- 
+ footer a {
+  color: white;
+ }
  .footer-link {
    color: #FFFFFF;
    text-decoration: none;
