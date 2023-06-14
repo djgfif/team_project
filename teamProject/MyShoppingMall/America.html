@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="../MyShoppingMall/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/pageLayout.js" defer></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/js/sendsort.js"></script>
+    <script src="assets/js/islogin.js"></script>
 </head>
 <style>
     ::-webkit-scrollbar { 
@@ -60,41 +64,38 @@ p {
 </style>
 <body>
   <div>
-  
-<!-- 메뉴(Navbar) -->
-<header id="header"></header>
-<main>
-<!-- 첫번째 패럴랙스 배경 -->
-<div class="img-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space: nowrap">
-        <span class="w3-wide w3-xxlarge w3-text-black w3-animate-bottom">THE UNITED STATES</span>
+    <!-- 메뉴(Navbar) -->
+    <header id="header"></header>
+    <main>
+    <!-- 첫번째 패럴랙스 배경 -->
+    <div class="img-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space: nowrap">
+            <span class="w3-wide w3-xxlarge w3-text-black w3-animate-bottom">THE UNITED STATES</span>
+        </div>
     </div>
-</div>
     
-<!-- Container (About Section) -->
-<div class="w3-container w3-content w3-padding-64">
-  <h3 class="w3-center">미국</h3>
-  <p class="w3-center"><em> 다양성과 열정이 흐르는 멋진 나라, 미국</em></p>
-    <div class="content" id="flex">
-  <div class="text">
-      <p>면적 : 9억 8,315만 1천㏊<br>인구
-        3억 3,999만 6,563명<br>'성조기'라고도 해요. 빨간색과 흰색의 13개의 줄은 독립 당시의 13개주를 뜻하며, 새로운 주가 생길 때마다 별의 수도 늘어서 지금의 국기에는 50개 주를 나타내는 50개의 별이 있어요. </p></div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26556054.636838097!2d-116.96379955983025!3d35.65961724347113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2z66-46rWt!5e0!3m2!1sko!2skr!4v1686579272900!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Container (About Section) -->
+    <div class="w3-container w3-content w3-padding-64">
+        <h3 class="w3-center">미국</h3>
+        <p class="w3-center"><em> 다양성과 열정이 흐르는 멋진 나라, 미국</em></p>
+        <div class="content" id="flex">
+            <div class="text">
+                <p>면적 : 9억 8,315만 1천㏊<br>인구
+                3억 3,999만 6,563명<br>'성조기'라고도 해요. 빨간색과 흰색의 13개의 줄은 독립 당시의 13개주를 뜻하며, 새로운 주가 생길 때마다 별의 수도 늘어서 지금의 국기에는 50개 주를 나타내는 50개의 별이 있어요. </p></div>
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26556054.636838097!2d-116.96379955983025!3d35.65961724347113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2z66-46rWt!5e0!3m2!1sko!2skr!4v1686579272900!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
     </div>
-    </div>
-</div>
     <div class="img-2 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space: nowrap">
+        <div class="w3-display-middle" style="white-space: nowrap">
         <span class="w3-wide w3-xxlarge w3-text-white w3-animate-bottom">STATUE OF LIBERTY</span>
+        </div>
     </div>
-</div>
     
-<div class="w3-container w3-content w3-padding-64">
-  <h3 class="w3-center">자유의 여신상</h3>
-  <p class="w3-center"><em> 열린 팔로 환영과 평화를 선사하는 자유의 상징</em></p>
+    <div class="w3-container w3-content w3-padding-64">
+    <h3 class="w3-center">자유의 여신상</h3>
+    <p class="w3-center"><em> 열린 팔로 환영과 평화를 선사하는 자유의 상징</em></p>
     <div class="content" id="flex">
-  <div class="text">
+    <div class="text">
       <p style="font-weight: bolder;">자유의 여신상</p>
       <p> 미국 뉴욕 항구에 위치한 상징적인 동상입니다. 이 동상은 프랑스의 선물로 1886년에 세계에 선보여졌으며, 미국의 독립과 자유, 인권을 상징하는 상입니다. 자유의 여신상은 높이 솟은 46m의 동상과 47m의 기념비를 포함한 베이스로 구성되어 있습니다.</p>
     <p>그녀는 황금으로 빛나는 관을 쓰고, 왼손에는 자유의 횃불을 들고 있으며, 오른손에는 자유의 선물을 상징하는 돌을 들고 있습니다. 그녀의 발 아래에는 "1776"이라는 미국 독립선언서의 연도가 새겨져 있습니다. 자유의 여신상은 이민자들에게 새로운 시작과 자유로운 미래를 상징하며, 미국의 열린 사회와 가치를 대표하는 상징적인 존재입니다.</p></div>
@@ -124,12 +125,9 @@ p {
     </div>
     </div>
 
-</main>
-<!-- Footer -->
-<footer id="footer"></footer>
-</div>
-
-<script src="../MyShoppingMall/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/islogin.js"></script>
+        </main>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+    </div>
 </body>
 </html>
