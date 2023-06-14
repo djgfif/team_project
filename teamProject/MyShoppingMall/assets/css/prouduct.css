@@ -85,13 +85,13 @@ main section article div img {
 }
 main section article div h2 {
 	margin-top: 15px;
-	font: bold 11px/1 "orbitron";
+	font: bold 13px/1 "orbitron";
 	letter-spacing: 1px;
 	color: #444;
 	margin-bottom: 5px;
 }
 main section article div p {
-	font: 10px/1.2 "arial";
+	font: 12px/1.2 "arial";
 	color: #777;
 	margin-bottom: 15px;
 }
