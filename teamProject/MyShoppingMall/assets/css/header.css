@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  padding: 20px;
+  padding-bottom: 27px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -67,6 +67,7 @@ nav ul li a:hover {
 
 main {
   margin-top: 18px;
+  margin-bottom: 32px;
 }
 /* 푸터 스타일 */
 footer {

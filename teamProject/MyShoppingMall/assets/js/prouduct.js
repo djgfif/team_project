@@ -9,16 +9,14 @@ window.addEventListener('load', () => {
   
     // Manually set the sort value for testing
     const urlParams = new URLSearchParams(window.location.search);
-    const sortValue = urlParams.get('sort') || null; // Default to null if no sort value found
+    const sortValue = urlParams.get('sort') || 'default';
   
     for (let e of btns) {
       const btnSortValue = e.querySelector('a').getAttribute('sort');
   
       if (btnSortValue === sortValue) {
         e.classList.add('on');
-      } else {
-        e.classList.remove('on');
-      }
+      } 
   
       e.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent default anchor behavior
