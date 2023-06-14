@@ -24,12 +24,12 @@ function getHeaderContent() {
           <a class="w3-bar-item w3-button menu" onclick="window.scrollTo(0,0);">HOME</a>
         </li>
         <li class="nav-item">
-          <div id="nav-drop" class="w3-dropdown-hover">
+          <div class="nav-drop">
           <a class="w3-bar-item w3-button menu" href="event.html"> EVENT</a>
           </div>
       </li>
         <li class="nav-item">
-           <div id="nav-drop" class="w3-dropdown-hover">
+           <div class="nav-drop w3-dropdown-hover">
               <a class="w3-bar-item w3-button menu" href="prouduct.html"><i class="fa fa-th"></i> PROUDUCT</a>
               <div id="nav-drop-items" class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="#" class="w3-bar-item w3-button" sort=".asia">Asia</a>
@@ -40,14 +40,14 @@ function getHeaderContent() {
             </div>
         </li>
         <li class="nav-item">
-          <div id="nav-drop" class="w3-dropdown-hover">
+          <div class="nav-drop">
           <a class="w3-bar-item w3-button menu" href="company.html">COMPANY</a>
             
           </div>
       </li>
 
       </ul>
-      <div id="text-area" class="text-end">
+      <div id="text-area" class="tex-tend">
         <div id="login-area">
           <a href="login.html"><button type="button" class="btn btn-outline-light me-2">로그인</button></a>
           <a href="signup.html"><button type="button" class="btn btn-warning">회원가입</button></a>
