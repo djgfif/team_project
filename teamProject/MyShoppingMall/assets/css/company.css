@@ -1,0 +1,168 @@
+/* Custom CSS for the main section */
+.main-container {
+  margin: auto 27px;
+  padding: 11px;
+}
+
+.container {
+  margin: 72px auto 32px;
+  padding: 24px;
+}
+
+.team-area {
+  margin-top: 270px;
+}
+
+main h2 {
+  margin-bottom: 17px;
+  font-size: 24px;
+}
+
+main p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+main .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+main .btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+main .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Center align the items */
+  margin: 32px 0;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 14px;
+}
+
+.card {
+  margin: 0 auto;
+  padding: 11px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 480px;
+}
+
+.card-img-top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px; /* Adjust the width as desired */
+  height: auto;
+  border-radius: 50%;
+}
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeInLeft {
+      0% {
+          opacity: 0;
+          transform: translate3d(-100%, 0, 0);
+      }
+      to {
+          opacity: 1;
+          transform: translateZ(0);
+      }
+  }
+
+  .slide-in-left {
+      position: relative;
+      animation: fadeInLeft 1s;
+  }
+
+  @keyframes fadeInRight {
+      0% {
+          opacity: 0;
+          transform: translate3d(100%, 0, 0);
+      }
+      to {
+          opacity: 1;
+          transform: translateZ(0);
+      }
+  }
+
+  .slide-in-right {
+    position: relative;
+    animation: fadeInRight 1s;
+    visibility: visible;
+  }
+
+
+  @media (max-width: 767px) {
+    /* Adjust the styles as per your requirements */
+    .main-container {
+      margin: auto 10px;
+      padding: 5px;
+    }
+
+    .container {
+      margin: 32px auto 16px;
+      padding: 12px;
+    }
+
+    .team-area {
+      margin-top: 180px;
+    }
+
+    main h2 {
+      font-size: 18px;
+    }
+
+    main p {
+      font-size: 14px;
+    }
+
+    .row {
+      flex-wrap: wrap;
+    }
+
+    .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 8px;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .card-img-top {
+      width: 100px;
+      height: auto;
+    }
+
+    .card-title {
+      font-size: 16px;
+    }
+
+    .card-text {
+      font-size: 12px;
+    }
+  }

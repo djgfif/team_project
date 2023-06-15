@@ -4,7 +4,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title> vertical-layout </title>	
+	<title>회사</title>	
 	
 
 
@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/company.css">
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,83 +22,7 @@
 <script src="assets/js/sendsort.js"></script>
 <script src="assets/js/islogin.js"></script>
 
-<style>
-  /* Custom CSS for the main section */
-  .main-container {
-    margin: auto 47px;
-    padding: 7px;
-  }
 
-  main h2 {
-    font-size: 24px;
-    margin: 112px auto 32px;
-    text-align: center;
-  }
-
-  main p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-
-  main .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-
-  main .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-  }
-
-  main .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .row {
-    display: flex;
-    justify-content: center; /* Center align the items */
-    margin: 20px;
-  }
-
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 20px;
-    
-  }
-
-  .card {
-    margin: 0 auto;
-    padding: 11px;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 480px;
-  }
-
-  .card-img-top {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px; /* Adjust the width as desired */
-    height: auto;
-    border-radius: 50%;
-  }
-  .card-body {
-    text-align: center;
-  }
-
-  .card-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .card-text {
-    color: #777;
-    margin-bottom: 10px;
-  }
-</style>
 </head>
 <body>
 	<div id="body-wrapper">
@@ -107,8 +32,8 @@
         <div class="main-container">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <h2>'여행조아'의 출발</h2>
+            <div class="col-md-6 slide-in-left">
+              <h2 style="text-align: left;">'여행조아'의 출발</h2>
               <p>한때 흔한 일상에 지쳐버린 우리,<br>
                 모여서 이야기를 나누던 그 순간,<br>
                 여행의 열망이 우리를 강하게 끌었습니다.<br>
@@ -124,8 +49,8 @@
             <div class="col-md-6">
               <!-- <img src="#" alt="Company Image" class="img-fluid"> -->
             </div>
-            <div class="col-md-6">
-              <h2>'여행조아'가 추구하는 길</h2>
+            <div class="col-md-6" id="animated-element" style="visibility: hidden;">
+              <h2 style="text-align: right;">'여행조아'가 추구하는 길</h2>
               <p>여행조아는 매 순간 더 나은 경험을 추구합니다.<br>
                 우리는 다양한 목적지와 문화를 탐험하며,<br>
                 새로운 경험을 통해 세계의 아름다움을 발견하고,<br>
@@ -138,8 +63,8 @@
           
         </div>
 
-        <div class="container">
-        <h2>Executive Team</h2>
+        <div class="container team-area">
+        <h2 style="text-align: center;">Executive Team</h2>
             <div class="row">
               <div class="col-md-6">
                 <div class="card">
@@ -168,6 +93,11 @@
   
       <footer id="footer"></footer>
     </div>
-
+    <script>
+      setTimeout(function() {
+        document.getElementById('animated-element').style.visibility = 'visible';
+        document.getElementById('animated-element').classList.add('slide-in-right');
+      }, 1000); // Add a delay of 2000 milliseconds (2 seconds)
+    </script>     
   </body>
 </html>

@@ -1,0 +1,92 @@
+ /* Hide scrollbars */
+ ::-webkit-scrollbar { 
+  display: none; 
+}
+
+/* Fonts */
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/* Flex container */
+#flex {
+  display: flex;
+}
+
+/* Text container */
+.text {
+  margin: 10px;
+  width: 100%;
+}
+
+/* Video container */
+.video {
+  margin-top: 100px;
+}
+
+/* Image containers */
+.img-1,
+.img-2,
+.img-3 {
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+
+/* Paragraph styles */
+p {
+  line-height: 190%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom styles for mobile devices */
+@media (max-width: 767px) {
+  /* Reduce navigation bar height */
+  .navbar {
+    max-height: 50px;
+    overflow: hidden;
+  }
+
+  /* Enable scrolling for navigation links */
+  .navbar-nav {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Adjust padding for navigation links */
+  .navbar-nav .nav-link {
+    padding: 5px 10px;
+  }
+
+  /* Center align middle display */
+  .w3-display-middle {
+    transform: translate(-50%, -50%);
+  }
+
+  /* Adjust font sizes */
+  .w3-wide {
+    font-size: 24px;
+  }
+
+  .w3-xxlarge {
+    font-size: 32px;
+  }
+
+  /* Flex direction for mobile */
+  .content {
+    flex-direction: column;
+  }
+
+  /* Margin adjustment for text and map */
+  .text,
+  .map {
+    margin: 10px 0;
+  }
+
+  /* Responsive map size */
+  .map iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
