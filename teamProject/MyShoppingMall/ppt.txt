@@ -1,0 +1,11 @@
+공통적 요소
+1. 자바스크립를 사용하여 header footer 공유
+2. EVENT COUNTRY COMPANY 글자 누를 시 이동
+3. 를 사용해 국가 시각화
+4. 부트스트랩의 carousel(자동 슬라이드)
+5. body에 font-family 적용
+6. 로고 누를 시 메인화면으로 이동
+7. COUNTRY 커서 올릴 시 숨겨진 상세 메뉴 표시
+8. nav-bar에 div, ul, li 태그 및 style을 이용해 출력
+9. w3 이용해 footer 시각화
+10. footer github 로고 클릭 시 페이지 이동

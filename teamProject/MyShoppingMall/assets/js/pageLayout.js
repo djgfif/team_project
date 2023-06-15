@@ -30,7 +30,7 @@ function getHeaderContent() {
       </li>
         <li class="nav-item">
            <div class="nav-drop w3-dropdown-hover">
-              <a class="w3-bar-item w3-button menu" href="prouduct.html"><i class="fa fa-th"></i> PROUDUCT</a>
+              <a class="w3-bar-item w3-button menu" href="prouduct.html"><i class="fa fa-th"></i> COUNTRY</a>
               <div id="nav-drop-items" class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="#" class="w3-bar-item w3-button" sort=".asia">Asia</a>
                 <a href="#" class="w3-bar-item w3-button" sort=".europe">Europe</a>
@@ -62,11 +62,11 @@ function getHeaderContent() {
 function getFooterContent() {
   return `
     <div class="w3-xlarge w3-section"></a>
-      <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-      <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <a href=""><a href="https://github.com/djgfif/team_project"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
-      <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://github.com/djgfif/team_project"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   `;
