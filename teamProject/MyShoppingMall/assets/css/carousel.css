@@ -71,6 +71,7 @@ body {
 main p {
   text-align: center;
   font-weight: bolder;
+  margin-bottom: 0;
 }
 main a {
   text-decoration: none;
