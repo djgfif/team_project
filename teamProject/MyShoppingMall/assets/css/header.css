@@ -91,3 +91,42 @@ footer {
  .footer-link:hover {
    text-decoration: underline;
  }
+
+
+ /* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  body {
+    background-color: #F5F5F5;
+    color: #333333;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  nav ul li {
+    margin-right: 5px;
+  }
+
+  nav ul li a {
+    padding: 3px 8px;
+    font-size: 14px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+}

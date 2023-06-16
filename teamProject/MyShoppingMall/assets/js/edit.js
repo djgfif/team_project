@@ -1,6 +1,6 @@
 // Retrieve user data from local storage
 const userData = JSON.parse(localStorage.getItem('userData'));
-    
+
 // Select input elements
 const emailInput = document.getElementById("join-email-input");
 const passwordInput = document.getElementById("join-password-input");
@@ -9,15 +9,19 @@ const nameInput = document.getElementById("join-name-input");
 const phoneInput = document.getElementById("join-phone-input");
 
 // Set initial values
-emailInput.placeholder = userData.email;
-nameInput.placeholder = userData.name;
-phoneINput.placeholder = userData.phone;
+emailInput.value = userData.email;
+nameInput.value = userData.name;
+phoneInput.value = userData.phone;
+
 // Handle form submission
-const form = document.getElementById("edit-form");
-form.addEventListener("submit", function(event) {
+const form = document.getElementById("registration-form");
+form.addEventListener("submit", handleFormSubmission);
+
+// Function to handle form submission
+function handleFormSubmission(event) {
   event.preventDefault(); // Prevent form submission
 
-  // Perform form validation and update user data
+  // Perform form validation
   const newPassword = passwordInput.value;
   const newPasswordCheck = passwordCheckInput.value;
 
@@ -32,13 +36,31 @@ form.addEventListener("submit", function(event) {
   userData.phone = phoneInput.value;
   localStorage.setItem("userData", JSON.stringify(userData));
 
-  // Redirect or display success message
-  // Replace the following line with your desired behavior
-  alert("회원 정보가 수정되었습니다.");
-});
+  // Display success message
+  displayMessage("회원정보가 수정되었습니다.");
+
+  // Redirect to userinfo.html after a delay
+  setTimeout(function() {
+    window.location.href = "userinfo.html";
+  }, 2000);
+}
 
 // Function to display error message
 function showError(elementId, message) {
   const errorElement = document.getElementById(elementId);
   errorElement.textContent = message;
+}
+
+// Function to display success message
+function displayMessage(message) {
+  const messageElement = document.createElement("div");
+  messageElement.className = "success-message";
+  messageElement.textContent = message;
+
+  const formContainer = document.querySelector(".form-container");
+  formContainer.appendChild(messageElement);
+
+  setTimeout(function() {
+    messageElement.remove();
+  }, 3000);
 }

@@ -11,6 +11,9 @@ window.onload = function() {
 
     loginForm.style.display = "none";
 
+    const userinfo = document.createElement("a");
+    userinfo.href = "userinfo.html";
+
     const icon = document.createElement("i");
     icon.classList.add("bi", "bi-person", "me-2", "display-6"); 
 
@@ -26,8 +29,9 @@ window.onload = function() {
       localStorage.setItem('loginYN', false);
       location.reload(); // Refresh the page after logout
     });
+    userinfo.appendChild(icon);
 
-    userFrom.appendChild(icon);
+    userFrom.appendChild(userinfo);
     userFrom.appendChild(username);
     userFrom.appendChild(logout);
 

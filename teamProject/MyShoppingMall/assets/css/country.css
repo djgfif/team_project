@@ -42,23 +42,6 @@ p {
 
 /* Custom styles for mobile devices */
 @media (max-width: 767px) {
-  /* Reduce navigation bar height */
-  .navbar {
-    max-height: 50px;
-    overflow: hidden;
-  }
-
-  /* Enable scrolling for navigation links */
-  .navbar-nav {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  /* Adjust padding for navigation links */
-  .navbar-nav .nav-link {
-    padding: 5px 10px;
-  }
-
   /* Center align middle display */
   .w3-display-middle {
     transform: translate(-50%, -50%);
@@ -70,7 +53,7 @@ p {
   }
 
   .w3-xxlarge {
-    font-size: 32px;
+    font-size: 30px !important;
   }
 
   /* Flex direction for mobile */
@@ -80,12 +63,13 @@ p {
 
   /* Margin adjustment for text and map */
   .text,
-  .map {
+  .map, .video {
     margin: 10px 0;
   }
 
   /* Responsive map size */
-  .map iframe {
+  .map iframe,
+  .video iframe {
     width: 100%;
     height: 350px;
   }

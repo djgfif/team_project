@@ -95,3 +95,31 @@ main section article div p {
 	color: #777;
 	margin-bottom: 15px;
 }
+
+/* Custom styles for mobile devices */
+@media (max-width: 767px) {
+  main {
+    padding: 10px;
+  }
+
+  main ul li {
+    margin-bottom: 5px;
+  }
+
+  main ul li a {
+    font-size: 10px;
+  }
+
+  main section article {
+    padding: 8px;
+		height: 165px;
+  }
+
+  main section article div h2 {
+    font-size: 12px;
+  }
+
+  main section article div p {
+    font-size: 10px;
+  }
+}
