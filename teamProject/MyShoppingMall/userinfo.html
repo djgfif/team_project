@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Info</title>
+  <title>회원정보</title>
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <script src="assets/js/userinfo.js" defer></script>
   <style>
-    /* Custom styles for user information */
     .container {
       max-width: 500px;
       margin: 40px auto;
@@ -18,12 +17,21 @@
     }
     .password-container {
       padding: 14px 30px;
+      border-top: 2px solid #969696;
+      border-bottom: 2px solid #969696;
     }
+    #password-submit {
+      background-color: #0d6efd;
+      color: white;
+    }
+
     .user-info {
       padding: 14px 30px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+      border-top: 2px solid #969696;
+      border-bottom: 2px solid #969696;
     }
     .hidden {
       display: none;
@@ -43,29 +51,38 @@
     }
 
     @media (max-width: 767px) {
+      .password-container {
+        width: 100%;
+        font-size: 15px;
+      }
+      
       .withdraw-container {
         font-size: 13px;
       }
-
     }
-
   </style>
 </head>
 <body>
   <div class="container">
     <h1>My Info</h1>
-    <div id="password-form" class="password-container">
+
+    <!-- Password Confirmation Form -->
+    <section class="password-container" id="password-form">
+      <h3>회원정보확인</h3>
       <div>
-        <span>아이디(이메일)</span>
+        <span>아이디(이메일):</span>
         <span id="email-info"></span>
       </div>
       <div style="margin-top: 10px;">
-        <label for="password-input">비밀번호</label>
+        <label for="password-input">비밀번호:</label>
         <input type="password" id="password-input">
         <button id="password-submit">확인</button>
+        <button type="button" onclick="location.href='index.html';">취소</button>
       </div>
-    </div>
-    <div id="user-info" class="hidden">
+    </section>
+
+    <!-- User Information -->
+    <section class="usermodify-auth hidden" id="user-info">
       <div class="user-info">
         <div>
           <span class="info-label">아이디(이메일):</span>
@@ -85,12 +102,14 @@
         </div>
       </div>
       <div class="withdraw-container">탈퇴를 원하시면 우측의 회원탈퇴 버튼을 눌러주세요.
-        <button type="button" id="withdraw-button">회원탈퇴</button></div>
-        <div class="button-container">
-          <button type="submit" id="modify-button" class="btn btn-primary" onclick="location.href='edit.html';">수정하기</button>
-          <button type="button" id="logout-button" class="btn btn-secondary" onclick="location.href='index.html';">나가기</button>
-        </div>
+        <button type="button" id="withdraw-button">회원탈퇴</button>
+      </div>
+      <div class="button-container">
+        <button type="submit" id="modify-button" class="btn btn-primary" onclick="location.href='edit.html';">수정하기</button>
+        <button type="button" id="logout-button" class="btn btn-secondary" onclick="location.href='index.html';">나가기</button>
+      <div>
+      </section>
     </div>
-  </div>
-</body>
+  </body>
 </html>
+  
